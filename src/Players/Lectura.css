@@ -1,0 +1,44 @@
+.Lectura {
+    padding: 20px 10px;
+
+    margin: 40px 0;
+
+    &>h1 {
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        font-size: 2.8rem;
+    }
+
+    &>h1::after {
+        position: absolute;
+
+        content: '';
+
+        left: 50%;
+        bottom: -10px;
+
+        transform: translate(-50%, -50%);
+
+        width: 0%;
+        height: 1px;
+
+        transition: width 1s;
+
+        background-color: black;
+    }
+    &>h1::after{
+        width: 90%;
+    }
+
+    &.Font>p {
+        font-family: "Edu AU VIC WA NT Pre", cursive;
+        margin: 10px 0;
+    }
+
+    &.FontNone>p{
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    background-color: rgba(0, 255, 255, 0.5);
+}
