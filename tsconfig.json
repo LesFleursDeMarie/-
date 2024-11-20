@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "target": "es5",                          // Compilación para ES5 (compatibilidad con navegadores antiguos)
+      "lib": ["dom", "es6", "dom.iterable", "scripthost"], // Bibliotecas necesarias para React y ES6
+      "allowJs": true,                          // Permite compilar archivos JavaScript también
+      "skipLibCheck": true,                     // Omite la comprobación de tipos en las bibliotecas
+      "esModuleInterop": true,                  // Permite importar módulos CommonJS como si fueran ESModules
+      "allowSyntheticDefaultImports": true,     // Permite importar módulos sin exportación por defecto
+      "strict": true,                           // Habilita todas las verificaciones estrictas de TypeScript
+      "forceConsistentCasingInFileNames": true, // Asegura que los nombres de archivos tengan mayúsculas y minúsculas consistentes
+      "module": "esnext",                       // Usamos módulos ESNext para optimizar el uso de imports
+      "moduleResolution": "node",               // Resolución de módulos tipo Node
+      "resolveJsonModule": true,                // Permite importar archivos JSON
+      "jsx": "react-jsx",                       // Usa el nuevo JSX transform de React 17+
+      "baseUrl": ".",                           // Establece el directorio base para las importaciones relativas
+      "paths": {
+        "@/*": ["src/*"]                        // Configura un alias para importar desde src
+      },
+      "allowImportingTsExtensions": true,       // Permite importar archivos con extensiones TypeScript (.ts, .tsx)
+      "noEmit": true,                           // No genera archivos de salida (.js) al ejecutar el compilador
+    },
+    "include": [
+      "src/**/*"   // Incluye todos los archivos en el directorio src
+    ],
+    "exclude": [
+      "node_modules" // Excluye la carpeta node_modules
+    ]
+  }
+  
